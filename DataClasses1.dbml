@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MyProducts" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\MyProducts.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MyProductsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Quote" Member="Quotes">
+    <Type Name="Quote">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="symbol" Type="System.String" DbType="NChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="dayCode" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="serverTimestamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="mode" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="lastPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="tradeSize" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="netChange" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="percentChange" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="tick" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="previousLastPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="previousTimestamp" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="bid" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="bidSize" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ask" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="askSize" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="unitCode" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="[open]" Member="open" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="high" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="low" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[close]" Member="close" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="numTrades" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dollarVolume" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="flag" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="previousClose" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="settlement" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="previousSettlement" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="volume" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="previousVolume" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="openInterest" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="fiftyTwoWkHigh" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="fiftyTwoWkHighDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="fiftyTwoWkLow" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="fiftyTwoWkLowDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="avgVolume" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sharesOutstanding" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dividendRateAnnual" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="dividendYieldAnnual" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="exDividendDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="impliedVolatility" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="twentyDayAvgVol" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="month" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="year" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="expirationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="lastTradingDay" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="twelveMnthPct" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="twelveMnthPctDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="preMarketPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="preMarketNetChange" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="preMarketPercentChange" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="preMarketTimestamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="afterHoursPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="afterHoursNetChange" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="afterHoursPercentChange" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="afterHoursTimestamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="averageWeeklyVolume" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="averageMonthlyVolume" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="averageQuarterlyVolume" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="exchangeMargin" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

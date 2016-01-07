@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MyProducts" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\MyProducts.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MyProductsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Hist" Member="Hists">
+    <Type Name="Hist">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="symbol" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="tradingDay" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="sessionCode" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="tickPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="tickSize" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[open]" Member="open" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="high" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="low" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[close]" Member="close" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="volume" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="openInterest" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
